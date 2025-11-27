@@ -1,0 +1,46 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 坐标轴箭头 -->
+    <marker id="axisArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto" stroke-width="0.5">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+    <!-- 向量箭头 -->
+    <marker id="vectorArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto" stroke-width="0.5">
+      <polygon points="0 0, 8 3, 0 6" fill="crimson" />
+    </marker>
+    <!-- 点的样式 -->
+    <circle id="pointDot" r="2" fill="blue" />
+  </defs>
+
+  <!-- 坐标系 -->
+  <!-- 原点设定在 (25, 175)，缩放因子设为 15 -->
+  <g font-family="sans-serif" font-size="8" fill="black">
+    <!-- Y 轴 (地位 Status) -->
+    <line x1="25" y1="180" x2="25" y2="15" stroke="black" stroke-width="1" marker-end="url(#axisArrow)" />
+    <!-- Status 标题移到箭头正上方，居中 -->
+    <text x="46" y="8" text-anchor="middle">地位</text>
+
+    <!-- X 轴 (性别 Gender) -->
+    <line x1="20" y1="175" x2="185" y2="175" stroke="black" stroke-width="1" marker-end="url(#axisArrow)" />
+    <!-- Gender 标题移到箭头右侧，垂直居中 -->
+    <text x="160" y="186" text-anchor="start">性别</text>
+
+    <!-- 原点 -->
+    <text x="15" y="185">O</text>
+  </g>
+
+  <!-- 绘制点 -->
+  <use href="#pointDot" x="40" y="160" />
+  <use href="#pointDot" x="40" y="40" />
+  <use href="#pointDot" x="160" y="160" />
+  <use href="#pointDot" x="160" y="40" />
+
+  <!-- 坐标标签 (调整位置避免拥挤) -->
+  <g font-family="sans-serif" font-size="9" fill="blue" text-anchor="middle">
+    <text x="60" y="170">男人(1,1)</text>
+    <text x="160" y="170">女人(9,1)</text>
+
+    <text x="60" y="30">王子(1,9)</text>
+    <text x="160" y="30">公主(9,9)</text>
+  </g>
+</svg>
