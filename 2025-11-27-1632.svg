@@ -1,0 +1,51 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 坐标轴箭头 -->
+    <marker id="axisArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto" stroke-width="0.5">
+      <polygon points="0 0, 10 3.5, 0 7" fill="black" />
+    </marker>
+    <!-- 向量箭头 -->
+    <marker id="vectorArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto" stroke-width="0.5">
+      <polygon points="0 0, 8 3, 0 6" fill="crimson" />
+    </marker>
+  </defs>
+
+  <!-- 坐标系 -->
+  <!-- 原点 (25, 175)，缩放 Scale = 30 -->
+  <g font-family="sans-serif" font-size="8" fill="black">
+    <!-- Y 轴 -->
+    <line x1="25" y1="180" x2="25" y2="15" stroke="black" stroke-width="1" marker-end="url(#axisArrow)" />
+    <text x="30" y="15">y</text>
+    <!-- X 轴 -->
+    <line x1="20" y1="175" x2="185" y2="175" stroke="black" stroke-width="1" marker-end="url(#axisArrow)" />
+    <text x="180" y="170">x</text>
+    <!-- 原点 -->
+    <text x="15" y="185">O</text>
+  </g>
+
+  <!-- 向量定义 -->
+  <!-- Vector a = (4, 1) -> End: (25+120, 175-30) = (145, 145) -->
+  <!-- Vector b = (1, 4) -> End: (25+30, 175-120) = (55, 55) -->
+
+  <!-- 夹角弧线 (Radius = 35) -->
+  <!-- Start (on a): (59, 166.5) -->
+  <!-- End (on b): (33.5, 141) -->
+  <path d="M 59 166.5 A 35 35 0 0 0 33.5 141" fill="none" stroke="blue" stroke-width="1" />
+
+  <!-- 绘制向量 -->
+  <line x1="25" y1="175" x2="145" y2="145" stroke="crimson" stroke-width="2" marker-end="url(#vectorArrow)" />
+  <line x1="25" y1="175" x2="55" y2="55" stroke="crimson" stroke-width="2" marker-end="url(#vectorArrow)" />
+
+  <!-- 标签 -->
+  <g font-family="sans-serif" font-size="9">
+    <!-- 向量标签 -->
+    <text x="150" y="150" fill="crimson">a (4, 1)</text>
+    <text x="45" y="50" fill="crimson">b (1, 4)</text>
+    
+    <!-- 角度标签 -->
+    <text x="60" y="155" fill="blue" font-weight="bold">θ</text>
+    
+    <!-- 公式提示 -->
+    <text x="100" y="30" fill="gray" font-size="8" text-anchor="middle">cos(θ) = (a · b) / (|a| |b|)</text>
+  </g>
+</svg>
