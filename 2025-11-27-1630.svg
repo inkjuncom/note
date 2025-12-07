@@ -1,4 +1,6 @@
 <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 新增白色背景矩形，覆盖整个画布 -->
+  <rect width="100%" height="100%" fill="white" />
   <defs>
     <!-- 坐标轴箭头 -->
     <marker id="axisArrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto" stroke-width="0.5">
