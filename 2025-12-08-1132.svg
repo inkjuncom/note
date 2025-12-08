@@ -1,0 +1,88 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white" />
+  <defs>
+    <!-- 普通箭头 (用于输出) -->
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000" />
+    </marker>
+    
+    <!-- 偏移箭头 (用于指向神经元圆圈) -->
+    <marker id="arrow-node" markerWidth="40" markerHeight="10" refX="29" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M20,0 L20,6 L29,3 z" fill="#000" />
+    </marker>
+  </defs>
+
+  <style>
+    text { font-family: "Times New Roman", serif; font-size: 20px; fill: black; }
+    .node { fill: white; stroke: black; stroke-width: 1.5; }
+    .link { stroke: black; stroke-width: 1; }
+  </style>
+
+  <!-- 连线层 -->
+  <g id="connections">
+    <!-- Input -> Layer 1 (3 nodes) -->
+    <!-- Input 1 (y=90) -->
+    <line x1="60" y1="90" x2="200" y2="90" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="90" x2="200" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="90" x2="200" y2="210" class="link" marker-end="url(#arrow-node)"/>
+    <!-- Input 2 (y=130) -->
+    <line x1="60" y1="130" x2="200" y2="90" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="130" x2="200" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="130" x2="200" y2="210" class="link" marker-end="url(#arrow-node)"/>
+    <!-- Input 3 (y=170) -->
+    <line x1="60" y1="170" x2="200" y2="90" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="170" x2="200" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="170" x2="200" y2="210" class="link" marker-end="url(#arrow-node)"/>
+    <!-- Input 4 (y=210) -->
+    <line x1="60" y1="210" x2="200" y2="90" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="210" x2="200" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="60" y1="210" x2="200" y2="210" class="link" marker-end="url(#arrow-node)"/>
+
+    <!-- Layer 1 (3 nodes) -> Layer 2 (4 nodes) -->
+    <!-- L1 Node 1 (y=90) -->
+    <line x1="200" y1="90" x2="340" y2="60" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="90" x2="340" y2="120" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="90" x2="340" y2="180" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="90" x2="340" y2="240" class="link" marker-end="url(#arrow-node)"/>
+    <!-- L1 Node 2 (y=150) -->
+    <line x1="200" y1="150" x2="340" y2="60" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="150" x2="340" y2="120" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="150" x2="340" y2="180" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="150" x2="340" y2="240" class="link" marker-end="url(#arrow-node)"/>
+    <!-- L1 Node 3 (y=210) -->
+    <line x1="200" y1="210" x2="340" y2="60" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="210" x2="340" y2="120" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="210" x2="340" y2="180" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="200" y1="210" x2="340" y2="240" class="link" marker-end="url(#arrow-node)"/>
+
+    <!-- Layer 2 (4 nodes) -> Layer 3 (1 node) -->
+    <line x1="340" y1="60" x2="480" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="340" y1="120" x2="480" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="340" y1="180" x2="480" y2="150" class="link" marker-end="url(#arrow-node)"/>
+    <line x1="340" y1="240" x2="480" y2="150" class="link" marker-end="url(#arrow-node)"/>
+
+    <!-- Layer 3 -> Output -->
+    <line x1="480" y1="150" x2="530" y2="150" class="link" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- 节点层 (画在连线之上) -->
+  <g id="nodes">
+    <!-- Layer 1 Nodes -->
+    <circle cx="200" cy="90" r="20" class="node"/>
+    <circle cx="200" cy="150" r="20" class="node"/>
+    <circle cx="200" cy="210" r="20" class="node"/>
+
+    <!-- Layer 2 Nodes -->
+    <circle cx="340" cy="60" r="20" class="node"/>
+    <circle cx="340" cy="120" r="20" class="node"/>
+    <circle cx="340" cy="180" r="20" class="node"/>
+    <circle cx="340" cy="240" r="20" class="node"/>
+
+    <!-- Layer 3 Node -->
+    <circle cx="480" cy="150" r="20" class="node"/>
+  </g>
+
+  <!-- 文本标签 -->
+  <text x="10" y="155">inputs</text>
+  <text x="540" y="155">output</text>
+</svg>
