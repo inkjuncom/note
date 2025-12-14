@@ -1,5 +1,5 @@
 <!-- 4个预测步骤的右移与掩码卡片配合SVG（纵向排列，解决过宽问题，可直接复制使用） -->
-<svg width="600" height="900" viewBox="0 0 600 900">
+<svg width="650" height="850" viewBox="0 0 650 850">
   <!-- 总标题 -->
   <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold">全预测步骤：右移卡片与掩码卡片配合示意图（纵向排列）</text>
   
@@ -98,6 +98,5 @@
   <text x="280" y="760" text-anchor="middle" font-size="12" fill="blue">预测目标：君</text>
   
   <!-- 配合逻辑说明 -->
-  <rect x="150" y="800" width="300" height="40" fill="none" stroke="gray" stroke-width="1"/>
   <text x="300" y="825" text-anchor="middle" font-size="12">逻辑：右移卡片提供错位素材，掩码卡片随步骤递减遮挡范围，确保仅能参考前文</text>
 </svg>
