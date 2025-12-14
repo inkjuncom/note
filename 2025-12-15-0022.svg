@@ -1,13 +1,13 @@
 <!-- 4个预测步骤的右移与掩码卡片配合SVG（纵向排列，解决过宽问题，可直接复制使用） -->
 <svg width="650" height="850" viewBox="0 0 650 850">
   <!-- 总标题 -->
-  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold">全预测步骤：右移卡片与掩码卡片配合示意图（纵向排列）</text>
+  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold">全预测步骤：Token 序列与掩码卡片配合示意图（纵向排列）</text>
   
   <!-- 1. 第1步：预测“我” -->
   <text x="300" y="80" text-anchor="middle" font-size="14" font-weight="bold">第1步：预测“我”</text>
-  <!-- 右移卡片 -->
+  <!-- Token 序列 -->
   <rect x="50" y="100" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="175" y="95" text-anchor="middle" font-size="12">右移卡片（答题素材卡）</text>
+  <text x="175" y="95" text-anchor="middle" font-size="12">Token 序列（有右移空白）</text>
   <rect x="60" y="110" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="80" y="135" text-anchor="middle" font-size="12">空白</text>
   <rect x="105" y="110" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="125" y="135" text-anchor="middle" font-size="12">我</text>
   <rect x="150" y="110" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="170" y="135" text-anchor="middle" font-size="12">是</text>
@@ -15,7 +15,7 @@
   <rect x="240" y="110" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="260" y="135" text-anchor="middle" font-size="12">君</text>
   <!-- 掩码卡片 -->
   <rect x="350" y="100" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="475" y="95" text-anchor="middle" font-size="12">掩码卡片（黑色遮挡卡）</text>
+  <text x="475" y="95" text-anchor="middle" font-size="12">掩码卡片</text>
   <rect x="360" y="110" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="380" y="135" text-anchor="middle" font-size="12">空白</text>
   <rect x="405" y="110" width="40" height="40" fill="black"/><text x="425" y="135" text-anchor="middle" font-size="12" fill="white">遮挡</text>
   <rect x="450" y="110" width="40" height="40" fill="black"/><text x="470" y="135" text-anchor="middle" font-size="12" fill="white">遮挡</text>
@@ -29,9 +29,9 @@
 
   <!-- 2. 第2步：预测“是” -->
   <text x="300" y="270" text-anchor="middle" font-size="14" font-weight="bold">第2步：预测“是”</text>
-  <!-- 右移卡片 -->
+  <!-- Token 序列 -->
   <rect x="50" y="290" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="175" y="285" text-anchor="middle" font-size="12">右移卡片（答题素材卡）</text>
+  <text x="175" y="285" text-anchor="middle" font-size="12">Token 序列（有右移空白）</text>
   <rect x="60" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="80" y="325" text-anchor="middle" font-size="12">空白</text>
   <rect x="105" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="125" y="325" text-anchor="middle" font-size="12">我</text>
   <rect x="150" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="170" y="325" text-anchor="middle" font-size="12">是</text>
@@ -39,7 +39,7 @@
   <rect x="240" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="260" y="325" text-anchor="middle" font-size="12">君</text>
   <!-- 掩码卡片 -->
   <rect x="350" y="290" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="475" y="285" text-anchor="middle" font-size="12">掩码卡片（黑色遮挡卡）</text>
+  <text x="475" y="285" text-anchor="middle" font-size="12">掩码卡片</text>
   <rect x="360" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="380" y="325" text-anchor="middle" font-size="12">空白</text>
   <rect x="405" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="425" y="325" text-anchor="middle" font-size="12">我</text>
   <rect x="450" y="300" width="40" height="40" fill="black"/><text x="470" y="325" text-anchor="middle" font-size="12" fill="white">遮挡</text>
@@ -53,9 +53,9 @@
 
   <!-- 3. 第3步：预测“印刻” -->
   <text x="300" y="460" text-anchor="middle" font-size="14" font-weight="bold">第3步：预测“印刻”</text>
-  <!-- 右移卡片 -->
+  <!-- Token 序列 -->
   <rect x="50" y="480" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="175" y="475" text-anchor="middle" font-size="12">右移卡片（答题素材卡）</text>
+  <text x="175" y="475" text-anchor="middle" font-size="12">Token 序列（有右移空白）</text>
   <rect x="60" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="80" y="515" text-anchor="middle" font-size="12">空白</text>
   <rect x="105" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="125" y="515" text-anchor="middle" font-size="12">我</text>
   <rect x="150" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="170" y="515" text-anchor="middle" font-size="12">是</text>
@@ -63,7 +63,7 @@
   <rect x="240" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="260" y="515" text-anchor="middle" font-size="12">君</text>
   <!-- 掩码卡片 -->
   <rect x="350" y="480" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="475" y="475" text-anchor="middle" font-size="12">掩码卡片（黑色遮挡卡）</text>
+  <text x="475" y="475" text-anchor="middle" font-size="12">掩码卡片</text>
   <rect x="360" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="380" y="515" text-anchor="middle" font-size="12">空白</text>
   <rect x="405" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="425" y="515" text-anchor="middle" font-size="12">我</text>
   <rect x="450" y="490" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="470" y="515" text-anchor="middle" font-size="12">是</text>
@@ -77,9 +77,9 @@
 
   <!-- 4. 第4步：预测“苹果” -->
   <text x="300" y="650" text-anchor="middle" font-size="14" font-weight="bold">第4步：预测“君”</text>
-  <!-- 右移卡片 -->
+  <!-- Token 序列 -->
   <rect x="50" y="670" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="175" y="665" text-anchor="middle" font-size="12">右移卡片（答题素材卡）</text>
+  <text x="175" y="665" text-anchor="middle" font-size="12">Token 序列（有右移空白）</text>
   <rect x="60" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="80" y="705" text-anchor="middle" font-size="12">空白</text>
   <rect x="105" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="125" y="705" text-anchor="middle" font-size="12">我</text>
   <rect x="150" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="170" y="705" text-anchor="middle" font-size="12">是</text>
@@ -87,7 +87,7 @@
   <rect x="240" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="260" y="705" text-anchor="middle" font-size="12">君</text>
   <!-- 掩码卡片 -->
   <rect x="350" y="670" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="475" y="665" text-anchor="middle" font-size="12">掩码卡片（黑色遮挡卡）</text>
+  <text x="475" y="665" text-anchor="middle" font-size="12">掩码卡片</text>
   <rect x="360" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="380" y="705" text-anchor="middle" font-size="12">空白</text>
   <rect x="405" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="425" y="705" text-anchor="middle" font-size="12">我</text>
   <rect x="450" y="680" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="470" y="705" text-anchor="middle" font-size="12">是</text>
@@ -98,5 +98,5 @@
   <text x="280" y="760" text-anchor="middle" font-size="12" fill="blue">预测目标：君</text>
   
   <!-- 配合逻辑说明 -->
-  <text x="300" y="825" text-anchor="middle" font-size="12">逻辑：右移卡片提供错位素材，掩码卡片随步骤递减遮挡范围，确保仅能参考前文</text>
+  <text x="300" y="825" text-anchor="middle" font-size="12">逻辑：Token 序列提供错位素材，掩码卡片随步骤递减遮挡范围，确保仅能参考前文</text>
 </svg>
