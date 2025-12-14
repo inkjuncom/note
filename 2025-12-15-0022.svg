@@ -1,8 +1,9 @@
-<svg width="600" height="200" viewBox="0 0 600 200"><!-- 标题标注 -->
-  <text x="300" y="20" text-anchor="middle" font-size="14" font-weight="bold">右移卡片与掩码卡片配合示意图（预测“爱”的步骤）&lt;/text&gt;
+<svg width="600" height="200" viewBox="0 0 600 200">
+  <!-- 标题标注 -->
+  <text x="300" y="20" text-anchor="middle" font-size="14" font-weight="bold">右移卡片与掩码卡片配合示意图（预测"爱"的步骤）</text>
   <!-- 右移卡片 -->
   <rect x="50" y="50" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="175" y="45" text-anchor="middle" font-size="12"&gt;右移卡片（答题素材卡）&lt;/text&gt;
+  <text x="175" y="45" text-anchor="middle" font-size="12">右移卡片（答题素材卡）</text>
   <!-- 右移卡片内部内容：空白 + 我 + 爱 + 吃 -->
   <rect x="60" y="60" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/>
   <text x="80" y="85" text-anchor="middle" font-size="12">空白</text>
@@ -14,7 +15,7 @@
   <text x="215" y="85" text-anchor="middle" font-size="12">吃</text>
   <!-- 掩码卡片（叠在右移卡片上方，仅展示遮挡部分） -->
   <rect x="350" y="50" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
-  <text x="475" y="45" text-anchor="middle" font-size="12"&gt;掩码卡片（黑色遮挡卡）&lt;/text&gt;
+  <text x="475" y="45" text-anchor="middle" font-size="12">掩码卡片（黑色遮挡卡）</text>
   <!-- 掩码卡片内部：空白和“我”可见，“爱”“吃”遮挡 -->
   <rect x="360" y="60" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/>
   <text x="380" y="85" text-anchor="middle" font-size="12">空白</text>
@@ -23,10 +24,10 @@
   <rect x="450" y="60" width="40" height="40" fill="black"/>
   <text x="470" y="85" text-anchor="middle" font-size="12" fill="white">遮挡</text>
   <rect x="495" y="60" width="40" height="40" fill="black"/>
-  <text x="515" y="85" text-anchor="middle" font-size="12" fill="white"&gt;遮挡&lt;/text&gt;
+  <text x="515" y="85" text-anchor="middle" font-size="12" fill="white">遮挡</text>
   <!-- 配合说明箭头 -->
   <line x1="300" y1="80" x2="350" y2="80" stroke="black" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <text x="325" y="75" text-anchor="middle" font-size="11"&gt;叠放配合&lt;/text&gt;
+  <text x="325" y="75" text-anchor="middle" font-size="11">叠放配合</text>
   <!-- 当前预测目标标注 -->
   <rect x="220" y="130" width="120" height="30" fill="none" stroke="blue" stroke-width="1.5"/>
   <text x="280" y="150" text-anchor="middle" font-size="12" fill="blue">当前预测目标：爱</text>
