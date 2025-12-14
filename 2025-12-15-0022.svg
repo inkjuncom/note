@@ -1,7 +1,7 @@
 <!-- 4个预测步骤的右移与掩码卡片（黑色部分）配合SVG（纵向排列，解决过宽问题，可直接复制使用） -->
 <svg width="650" height="850" viewBox="0 0 650 850">
   <!-- 总标题 -->
-  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold">全预测步骤：Token 序列与掩码卡片（黑色部分）配合示意图（纵向排列）</text>
+  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold">全预测步骤：Token 序列与掩码卡片（黑色部分）配合示意图</text>
   
   <!-- 1. 第1步：预测“我” -->
   <text x="300" y="80" text-anchor="middle" font-size="14" font-weight="bold">第1步：预测“我”</text>
