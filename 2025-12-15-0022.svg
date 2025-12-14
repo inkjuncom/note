@@ -36,7 +36,7 @@
   <rect x="105" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="125" y="325" text-anchor="middle" font-size="12">我</text>
   <rect x="150" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="170" y="325" text-anchor="middle" font-size="12">是</text>
   <rect x="195" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="215" y="325" text-anchor="middle" font-size="12">印刻</text>
-  <rect x="240" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="260" y="135" text-anchor="middle" font-size="12">君</text>
+  <rect x="240" y="300" width="40" height="40" fill="none" stroke="gray" stroke-width="1"/><text x="260" y="325" text-anchor="middle" font-size="12">君</text>
   <!-- 掩码卡片 -->
   <rect x="350" y="290" width="250" height="60" fill="none" stroke="black" stroke-width="2"/>
   <text x="475" y="285" text-anchor="middle" font-size="12">掩码卡片（黑色遮挡卡）</text>
